@@ -1,0 +1,334 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0fff0;
+}
+
+header {
+  background-color: #66aa66;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #66aa66;
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+}
+
+h2 {
+  color: #448844;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+p {
+  color: #559955;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.goalList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.goal {
+  display: block;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  border-color: #448844;
+  border-style: solid;
+  border-width: 2px;
+  transition: border-width 0.2s;
+}
+
+.buttonLine {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 125px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.button {
+  display: block;
+  border-radius: 15px;
+  border-color: #448844;
+  border-style: solid;
+  border-width: 1px;
+  transition: border-width 0.2s;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+}
+
+.ico {
+  display: flex;
+  max-width: 60%;
+  height: auto;
+  padding-left: 75px;
+  transition: max-width 1.5s;
+}
+
+.goal p {
+  color: #559955;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav ul {
+  padding-inline-start: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 30px 15px 30px;
+  border-radius: 15px;
+  background-color: #448844;
+  margin-bottom: 5px;
+  transition: background-color 0.15s;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.addButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 67px 15px 67px;
+  border-radius: 15px;
+  transition: border-width 0.2s;
+}
+
+h3 {
+  padding-left: 40px;
+  color: #337733;
+}
+
+.achievements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.achievement {
+  display: grid;
+  background-color: #eeeeee;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  border-radius: 15px;
+  border-color: #448844;
+  border-style: solid;
+  border-width: 2px;
+  transition: border-width 0.2s;
+}
+
+h4 {
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 24px;
+  color: #337733;
+  transition: font-size 0.5s
+}
+
+.ctextList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ctext {
+  display: block;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  border-color: #448844;
+  border-style: solid;
+  border-width: 2px;
+  transition: border-width 0.2s;
+}
+
+.statistics p {
+  padding-left: 60px;
+  padding-right: 20px;
+}
+
+.ctext p {
+  transition: font-size 0.2s;
+}
+
+.button:hover {
+  border-width: 2.5px;
+}
+
+nav ul li:hover {
+  background-color: #226622;
+}
+
+.ctext:hover {
+  border-width: 5px;
+}
+
+.ctext p:hover {
+  font-size: 20px;
+}
+
+.goal:hover {
+  border-width: 5px;
+}
+
+.addButton:hover {
+  border-width: 5px;
+}
+
+.achievement:hover {
+  border-width: 5px;
+}
+
+.ico:hover {
+  max-width: 85%;
+}
+
+h4:hover {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .goalList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievements {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 426px) {
+  header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  p {
+    padding-left: 30px;
+    padding-right: 15px;
+    font-size: 14px;
+  }
+
+  .goalList {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+  }
+
+  .buttonLine {
+    gap: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .button {
+    border-radius: 10px;
+  }
+
+  .goal p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  nav ul li {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+  }
+
+  nav ul li a{
+    font-size: 14px;
+  }
+
+  .addButton {
+    padding: 10px 40px 10px 40px;
+  }
+
+  h3 {
+    padding-left: 30px;
+    font-size: 18px;
+  }
+
+  .achievements {
+    gap: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .achievement {
+    border-radius: 10px;
+  }
+
+  h4 {
+    padding-left: 30px;
+    padding-right: 15px;
+    font-size: 20px;
+  }
+
+  .ctextList {
+    gap: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .ctext {
+    border-radius: 10px;
+  }
+
+  .statistics p {
+    padding-left: 45px;
+    padding-right: 15px;
+  }
+
+  .ico {
+    padding-left: 50px;
+  }
+
+  h4:hover {
+    font-size: 24px;
+  }
+
+  .ctext p:hover {
+    font-size: 17px;
+  }
+}
