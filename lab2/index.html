@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Менеджер з досягнення цілей</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <header>
+	<h1>Менеджер з досягнення цілей</h1>
+        <nav>
+          <ul>
+            <li class="menu-item" data-desc="Переміщає вас до сектору головне"><a href="#main">Головна</a></li>
+            <li class="menu-item" data-desc="Переміщає вас до сектору мої цілі"><a href="#goals">Мої цілі</a></li>
+            <li class="menu-item" data-desc="Переміщає вас до сектору прогрес"><a href="#progress">Прогрес</a></li>
+            <li class="menu-item" data-desc="Переміщає вас до сектору спільнота"><a href="#community">Спільнота</a></li>
+          </ul>
+          <p id="description" class="desc"></p>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="main">
+          <h2>Коротко про проєкт</h2>
+          <p>Головна ціль сайту - допомога в досягненні поставлених перед собою цілей.</p>
+          <p>Користувачу надаються інструменти з планування цілей та перегляду досягнень.</p>
+          <p>Також є можливість обмінюватися досвідом, надавати поради та підтримувати інших користувачів.</p>
+          <hr>
+        </section>
+
+        <section id="goals">
+          <h2>Мої цілі</h2>
+          <p>Тут ви можете побачити свої цілі:</p>
+  
+          <div class="goalList">
+  
+            <div class="goal"><button id = "addButton" class = "addButton" onclick="openForm1()"><img src="res/add.png"></button></div>
+  
+          </div>
+          <hr>
+        </section>
+
+        <section id="progress">
+          <h2>Прогрес</h2>
+          <h3>Ваші досягнення:</h3>
+          <div class="achievements">
+            <div class="achievement" id="ach1">
+              <div class="ico"><img src="res/achievement1.png"></div>
+              <div>
+                <h4>Перші кроки!</h4>
+                <p>Досягнути першу ціль</p>
+                <p id="st1">Cтатус: 0%</p>
+              </div>
+            </div>
+            <div class="achievement" id="ach2">
+              <div class="ico"><img src="res/achievement2.png"></div>
+              <div>
+                <h4>Вперед до досягнень!</h4>
+                <p>Досягнути 10 цілей</p>
+                <p id="st2">Cтатус: 0%</p>
+              </div>
+            </div>
+            <div class="achievement" id="ach3">
+              <div class="ico"><img src="res/achievement3.png"></div>
+              <div>
+                <h4>Вас не спинити!</h4>
+                <p>Досягнути 100 цілей</p>
+                <p id="st3">Cтатус: 0%</p>
+              </div>
+            </div>
+            <div class="achievement" id="ach4">
+              <div class="ico"><img src="res/achievement4.png"></div>
+              <div>
+                <h4>Сонько!</h4>
+                <p>Прострочити 1 ціль</p>
+                <p id="st4">Cтатус: 0%</p>
+              </div>
+            </div>
+            </div>
+          </div>
+          <h3>Статистика цілей:</h3>
+          <div class="statistics">
+            <p id="st5">Досягнуто - 0</p>
+            <p id="st6">Прострочено - 0</p>
+            <p id="st7">В процесі - 0</p>
+          </div>
+          <hr>
+        </section>
+  
+        <section id="community">
+          <h2>Спільнота</h2>
+          <p>Тут ви можете знайти поради від інших користувачів:</p>
+          <div class="ctextList">
+            
+          </div>
+          
+          <input type="textarea" class="ctextInput" id="textInput" placeholder="Залиште своє повідомлення тут...">
+          <button class="ctBTN" onclick="inputCText()">Залишити повідомлення</button>
+
+          <hr>
+        </section>
+
+    </main>
+    <footer>
+      <p>© ОІ-24 Старченко Денис</p>
+    </footer>
+
+      <div id="goalForm" class="form1">
+          <div class="form-content">
+              <span class="close" onclick="closeForm1()">&times;</span>
+              <h2>Додавання цілі</h2>
+              <form id="f1">
+                  <label for="goalName">Назва цілі:</label><br>
+                  <input type="goalName" id="goalName" name="goalName" style="width: 80%;"required><br><br>
+                  
+                  <label for="deadline">Дедлайн:</label>
+                  <input type="date" id="deadline" name="deadline" required><br><br>
+
+                  <button type="submit" class="sumbit">Додати</button>
+              </form>
+          </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
